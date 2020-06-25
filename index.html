@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Planets</h1>
+    <table border="2">
+        <thead>
+            <tr>
+                <th colspan="2"></th>
+                <th scope="col"> Name</th>
+                <th scope="col">Mass (10<sup>24</sup>kg)</th>
+                <th scope="col">Diameter(km)</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" rowspan="4" colspan="2">Terrestrial planets</th>
+                <th scope="row">Mercury</th>
+                <td>0.330</td>
+                <td>4.879</td>
+            </tr>
+            <tr>
+                <th scope="row">Venus</th>
+                <td>4.87</td>
+                <td>12.104</td>
+            </tr>
+            <tr>
+                <th scope="row">Earth</th>
+                <td>5.97</td>
+                <td>12.756</td>
+            </tr>
+            <tr>
+                <th scope="row">Mars</th>
+                <td>0.642</td>
+                <td>6.792s</td>
+            </tr>
+            <tr>
+                <th rowspan="4" scope="row">Jovian planets</th>
+                <th rowspan="2" scope="row">Gas giants</th>
+                <th scope="row">Jupiter</th>
+                <td>1898</td>
+                <td>142.984</td>
+            </tr>
+            <tr>
+                <th scope="row">Saturn</th>
+                <td>568</td>
+                <td>120.536</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="row">Ice giants</th>
+                <th scope="row">Uranus</th>
+                <td>86.8</td>
+                <td>51.118</td>
+            </tr>
+            <tr>
+                <th scope="row">Neptune</th>
+                <td>102</td>
+                <td>49.528</td>
+            </tr>
+            <tr>
+                <th colspan="2" scope="row">Dwarf planets</th>
+                <th scope="row">Pluto</th>
+                <td>0.0146</td>
+                <td>2.370</td>
+            </tr>
+        </tbody>
+    </table>
 
+    <form action="index.html" method="GET">
+        <fieldset>
+            <legend>Ask about our planets</legend>
+        
+            <label for="fname">Full name <input type="text" name="" id="fname"></label>
+            <label for="email"> Email <input type="email" name="" id="email"> </label>
+            <label > Favourite planet</label>
+        </fieldset> 
+    </form>
+</body>
+</html>
