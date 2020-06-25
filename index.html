@@ -70,14 +70,28 @@
             </tr>
         </tbody>
     </table>
-
+<p></p>
     <form action="index.html" method="GET">
         <fieldset>
-            <legend>Ask about our planets</legend>
+            <legend>Ask us about planets</legend>
         
-            <label for="fname">Full name <input type="text" name="" id="fname"></label>
-            <label for="email"> Email <input type="email" name="" id="email"> </label>
-            <label > Favourite planet</label>
+            <p><label for="fname">Full name <input type="text" name="name" id="fname" required></label> </p>
+            <p><label for="email"> Email <input type="email" name="email" id="email" required> </label> </p>
+            <p><label> Favourite planet</label> </p>
+            <div><label for="Mercury"><input type="radio" name="planet" id="Mercury" value="Mercury">Mercury</label></div>
+            <div><label for="Venus"><input type="radio" name="planet" id="Venus" value="Venus">Venus</label></div>
+            <div><label for="Earth"><input type="radio" name="planet" id="Earth" value="Earth" checked>Earth</label></div>
+            <div><label for="Mars"><input type="radio" name="planet" id="Mars" value="Mars">Mars</label></div>
+            <div><label for="Jupiter"><input type="radio" name="planet" id="Jupiter" value="Jupiter">Jupiter</label></div>
+            <div><label for="Saturn"><input type="radio" name="planet" id="Saturn" value="Saturn">Saturn</label></div>
+            <div><label for="Uranus"><input type="radio" name="planet" id="Uranus" value="Uranus">Uranus</label></div>
+            <div><label for="Neptune"><input type="radio" name="planet" id="Neptune" value="Neptune">Neptune</label></div>
+            <div><label for="Pluto"><input type="radio" name="planet" id="Pluto" value="Pluto">Pluto</label></div>
+            <p><label for="Agreement"><input type="checkbox" name="agree" id="Agreement" required>I agree to the <a href="#">terms and conditions</a></label></p>
+            <p>
+                <button type="reset">Reset</button>
+                <button type="submit">Ask away</button>
+            </p>
         </fieldset> 
     </form>
 </body>
