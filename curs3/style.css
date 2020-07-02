@@ -1,0 +1,39 @@
+#logo {
+    width: 50px; 
+}
+
+/* pseudoclasese inseamna o stare a clasei   exemplu concret a:hover*/
+/* ::pseudoelem  elemente care nu exista in html - exp. primul caracter din paragraf, 
+continutul de la inc elem, before after */
+/* user agent este browserul*/
+
+/* tipuri de selectori
+.class
+#id
+:pseudo-class
+::pseudo-elem
+[attr=val]
+ */
+
+/* tipuri de combinatori */
+/* spatiu - descendent pe orice nivel */
+            /* p strong
+            spatiul specifica ca acel strong trebuie sa fie in interiorul unui p si doar atunci il va 
+            modifcia dupa ce 
+            i se spune
+        li a  = toate a - urile care sunt in liuri */
+/* >  - descendenti directi */
+/* + - se refera la frati - frate==sibling imediat precedent (in fata lui) */
+        /* clear fix   = se baga dupa un pseudo element after cu un continut gol cu display table
+        si chear both
+        rezolva problema cu elementele care apar dua float */
+        
+        /* exista un selector pseudo clasa legata de starea de a a fi  primul copil li>first-child */
+        /* exista li:nth-child(3) al doilea copil
+        sau 2n fiecare al doilea
+        sau 2n+3 dar incepand de la al treilea 
+        sau cu odd si evan */
+        /* exista last child */
+        
+        /* doar liurile care au un frate li fix inaintea lor au un border exp gen main-menu > li + li */
+/* ~ frate oriunde inainte de elementul selectat */
