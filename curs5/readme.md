@@ -70,4 +70,5 @@ iar visibility hidden ocupa in continuare spatiul dar nu se mai vede - este tran
                 - flex
                 - grid
 
+tema de facut un modal
 
