@@ -35,12 +35,23 @@
     </p>
     <div class="backdrop"></div>
     <div class="loginSpace">
-        <form action="get" name="Login" class="formLogIn">Login
-            <button type="button" class="closeBtn">x</button>
-            <label for="username">Username<input type="text" name="username" ></label>
-            <label for="password">Password<input type="password" name="password"></label>
-            <button type="submit" class="loginBtn">Login</button>
-            <button type="reset" class="cancelBtn">Cancel</button>
+        <form action="get" name="Login" class="formLogIn">
+            <header>
+                <h1>Login</h1>
+                <button type="button" class="closeBtn">x</button>
+            </header>
+            <div class="input-area">
+                <label for="username">Username<input type="text" name="username" placeholder="Username" >
+                </label> 
+                <br>
+                <label for="password">Password<input type="password" name="password" placeholder="Password">
+                </label>
+            </div>
+            <footer class="footer-elem">
+                <button type="reset" class="cancelBtn">Cancel</button>                
+                <button type="submit" class="loginBtn">Login</button>
+
+            </footer>
         </form>
 
     </div>

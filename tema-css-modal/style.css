@@ -1,17 +1,26 @@
-* {
-
-}
-
 body{
     position:absolute;
     font-family:  "Tahoma";
     color: #333;
+    box-sizing: border-box;
 }
 
 
 .loginSpace{
+    background-color: white;
+
     width: 600px;
     min-height: 200px;
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -300px;    
+    
+    z-index: 3;
+
+    border-radius: 5%;
 }
 
 
@@ -19,10 +28,29 @@ body{
 
     color: darkgreen;
     background-color: #bada55;
-}
 
-.loginBtn, .cancelBtn {
+}
+.footer-elem{
+    position: relative;
+    border-top: solid #cdcdcd;
+    height: 50px;
+}
+.footer-elem > button{
+    display: inline-block;
     border-radius: 3px;
+    position: relative;
+    left: 80%;
+    padding: 5px;
+    top: 25%;
+}
+header{
+    position: relative;
+    border-bottom: solid #cdcdcd;
+    height: 50px;
+}
+header>*{
+    display: inline;
+    
 }
 
 .closeBtn{
@@ -31,15 +59,22 @@ body{
     color: #fff;
     background-color: #333;
     border-radius: 50%;
-}
+    position: relative;
+    left: 75%;
+    padding: 0;
+    border: 0;
 
+}
 
 .backdrop{
-    background: #000;
+    background-color:rgba(0, 0, 0, 0.7);
     width: 100vw;
     height: 100vw;
-    position: relative;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     z-index: 1;
-
-
+    
 }
+
+
