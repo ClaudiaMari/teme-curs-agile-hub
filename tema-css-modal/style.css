@@ -67,9 +67,8 @@ header>*{
 }
 
 .input-area{
-    /* min-height: 100px; */
     vertical-align: middle;
-    padding: 3rem;
+    padding: 1rem;
     
 
 }
@@ -96,14 +95,9 @@ header>*{
     color: darkgreen;
     background-color: #bada55;
     float: right;
-    /* margin: 10px; */
-
-
 }
 .cancelBtn{
     float: right;
-    /* margin-top: 10px; */
-
 }
 .loginBtn, .cancelBtn {
     margin: 15px 5px 10px ; 
@@ -111,6 +105,7 @@ header>*{
     border-radius: 3px;
     border: solid 1px #cdcdcd;
 }
+
 p{
     margin: 10px;
 }
