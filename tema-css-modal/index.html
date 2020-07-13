@@ -33,27 +33,38 @@
         quaerat impedit neque ex repudiandae possimus? Tempore aperiam adipisci ipsam excepturi, ab maiores 
         ducimus recusandae suscipit laudantium. Ad, ducimus!
     </p>
-    <div class="backdrop"></div>
-    <div class="loginSpace">
-        <form action="get" name="Login" class="formLogIn">
-            <header>
-                <h1>Login</h1>
-                <button type="button" class="closeBtn">x</button>
-            </header>
-            <div class="input-area">
-                <label for="username">Username <input type="text" name="username" placeholder="Username" >
-                </label> 
-                <br>
-                <label for="password">Password   <input type="password" name="password" placeholder="Password">
-                </label>
-            </div>
-            <footer class="footer-elem">
-                <button type="submit" class="loginBtn">Login</button>
-                <button type="reset" class="cancelBtn">Cancel</button>                
+    <div class="backdrop">
+        <div class="modal-space">
+            <form action="index.html" method="GET" class="form-log-in">
+                <header>
+                    <h1>Login</h1>
+                    <button class="closeBtn">x</button>
+                </header>
+                
+                <div class="input-area">
 
-            </footer>
-        </form>
+                    <span class="input-space">
+                        <label for="username"> 
+                            Username
+                            <input type="text" name="Username" placeholder="Username" id="username" >
+                        </label> 
+                    </span>
 
+                    <span class="input-space"> 
+                        <label for="password">
+                            Password   
+                            <input type="password" id="password" placeholder="Password">
+                        </label>
+                    </span>  
+                    
+                </div>
+
+                <footer class="footer-elem">
+                    <button type="submit" class="loginBtn">Login</button>
+                    <button type="reset" class="cancelBtn">Cancel</button>                
+                </footer>
+            </form>
+        </div>
     </div>
 </body>
 </html>
