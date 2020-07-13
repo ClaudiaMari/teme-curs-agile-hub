@@ -3,8 +3,8 @@ body{
     font-family:  "Tahoma";
     color: #333;
     box-sizing: border-box;
+    margin: 0;
 }
-
 
 .loginSpace{
     background-color: white;
@@ -18,31 +18,34 @@ body{
     margin-top: -100px;
     margin-left: -300px;    
     
-    z-index: 3;
+    z-index: 2;
 
     border-radius: 5%;
 }
 
+.footer-elem{
+    position: relative;
+    border-top: solid #cdcdcd;
+    height: 50px;
+    float: bottom;
+    padding-top: 10px;
+    padding-right:10px;
+}
 
 .loginBtn{
 
     color: darkgreen;
     background-color: #bada55;
+    float: right;
+    margin: 10px;
 
 }
-.footer-elem{
-    position: relative;
-    border-top: solid #cdcdcd;
-    height: 50px;
+.cancelBtn{
+    float: right;
+    margin-top: 10px;
+
 }
-.footer-elem > button{
-    display: inline-block;
-    border-radius: 3px;
-    position: relative;
-    left: 80%;
-    padding: 5px;
-    top: 25%;
-}
+
 header{
     position: relative;
     border-bottom: solid #cdcdcd;
@@ -50,8 +53,9 @@ header{
 }
 header>*{
     display: inline;
-    
+    padding: 10px;
 }
+
 
 .closeBtn{
     height: 10px;
@@ -59,10 +63,10 @@ header>*{
     color: #fff;
     background-color: #333;
     border-radius: 50%;
-    position: relative;
-    left: 75%;
-    padding: 0;
-    border: 0;
+    float: right;
+    margin-top:10px;
+    margin-right: 10px;
+
 
 }
 
@@ -77,4 +81,23 @@ header>*{
     
 }
 
+
+input::placeholder{
+    color: #929292;
+}
+
+.input-area{
+    width: 600px;
+    position: relative;
+    min-height: 100px;
+    padding-top: 10px;
+}
+.input-area>*{
+    position: relative;
+    width: 300px;
+    /* height: 100px; */
+    display: block;
+    left: 50%;
+    margin-left: -150px;
+}
 
