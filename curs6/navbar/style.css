@@ -3,6 +3,7 @@
     --bg-color-primary: rgb(22,22,22);    
     --bg-color-secondary: rgb(100,100,100);
     --bg-color-third: purple;
+    --bg-color-fourth: rgb(11,11,11);
 }
 
 *{
@@ -23,7 +24,7 @@ main{
     height: 100vh;
 
     background-color: var(--bg-color-primary);
-
+    /* padding-left: 15px; */
 }
 p{
     margin-bottom: 1rem;
@@ -64,16 +65,24 @@ p{
 }
 .navbar:hover .nav-item:hover{
     box-shadow: 0px 1px  var(--bg-color-third);
+    background-color: var(--bg-color-fourth);
+    transition: all .1s ease-in-out;
+    /* padding-left: 1rem; */
 }
 .navbar-nav{
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    margin-left: 1rem;
+    flex-flow: column;
+    list-style: none;
+   /* justify-content: space-evenly ;  */
+
 }
 .navbar-nav li:last-child{
     margin-top: auto;
 }
 
+.nav    -item{
+    padding-left: 1rem;
+}
 
 
