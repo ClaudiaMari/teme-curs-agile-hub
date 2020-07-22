@@ -1,7 +1,8 @@
 :root{
     --nav-width:5rem;
     --bg-color-primary: rgb(22,22,22);    
-    --bg-color-primary: rgb(100,100,100);
+    --bg-color-secondary: rgb(100,100,100);
+    --bg-color-third: purple;
 }
 
 *{
@@ -15,7 +16,7 @@ main{
     line-height: 1.5;
 }
 
-nav{
+.navbar{
     position: fixed;
 
     width: var(--nav-width);
@@ -28,20 +29,41 @@ p{
 }
 /* este ideal sa se foloseasta ori bottom ori top pentru margin pe parcursul unui proiect */
 .nav-link{
+    display: flex;
+    align-items: center;
+    
+    height: 5rem;
+    
     text-decoration: none;
     color: var(--bg-color-secondary);
-    height: 5rem;
+
+
+    /* justify-content: center; */
 
 }
 .nav-link>span{
     display:none;
     margin-left: 1rem;
+
 }
 .navbar:hover .nav-link>span{
     display: inline;
 
 }
 .navbar:hover {
-    width:10rem;
+    width:16rem;
 }
+
+.nav-link svg {
+    height: 2rem;
+
+}
+    .nav-item:hover .nav-link svg{
+    color: var(--bg-color-third)
+}
+.navbar:hover .nav-item:hover{
+    box-shadow: 0px 1px  var(--bg-color-third);
+}
+
+
 
