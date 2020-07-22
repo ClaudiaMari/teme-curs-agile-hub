@@ -1,0 +1,136 @@
+:root{
+    --muted-color: #1f1d1d;
+}
+
+
+*{
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 1rem 0;
+}
+
+.card{
+    --border-style: 1px solid var(--muted-color);
+    --padding-size: .5rem;
+
+    border: var(--border-style);
+    /* padding: .5rem; */
+}
+
+.card__image{
+    max-width: 100%;
+}
+.card__header{
+    /* padding: var(--padding-size); */
+    border-bottom:  var(--border-style);
+}
+
+.card section,
+.card footer,
+.card header{
+    padding: var(--padding-size);
+}
+
+.card footer{
+    border-top: var(--padding-size) ;
+}
+
+.main-menu__item{
+    display: block;
+
+    border-bottom:1px solid var(--muted-color) ;
+    list-style: none;
+}
+
+.main-menu__item a{
+    display: block;
+
+    padding: .5rem;
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.main-menu__item a:hover{
+    text-decoration: underline;
+}
+
+/* daca pe mobile am o sectiune cu display none care are poze browserul nu le va descarca */
+
+@media print{
+    .logo,
+    .main-menu{
+        display: none;
+    }
+    a[href^=http]::after{
+        content: ' ('attr(href)') ';
+        display: inline;
+        margin: 0 10px;
+    }
+}
+/* in mediul de print nu vor fi afisate logoul si meniul */
+/* @media e directiva */
+/* putem adauga linkul ca descriere in moemntul in care se da print */
+
+@media screen and (min-width: 700px) {
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card{
+        min-width: 300px;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    main{
+        margin:0 auto;
+        width: 1200px;
+    }
+
+/* filter: brightenss se va putea seta in viitor la media selector de nivelul urmator utilizand date preluate de la light sensorul telefonului */
+    .card{
+        min-width: 300px;
+    }
+
+}
+
+/* intrebari de interviu 
+!!!
+!!!
+
+- discutie despre selectori
+    - specificitate
+    - ce e si de ce nu se foloseste important
+- despre proprietati
+        -position
+        - culori 
+            - valoarea hsl pt rosu
+- cum se include un font custom
+- directii mai avansae - flex si grid
+    - de ce e mai ok decat float
+- alte tipuri de display table si table cel impreuna cu flex si grid
+- dif dintre display none si visibilit hidden
+- cum scoti un float - clear fix
+- dif dintre opacity si bg cu rbg
+- daca ai un after. sau un after e obligatoriu sa ai content
+- ce inseamna spacificatorii din selectori ^= (inceput) si $=  (sfarsit) ~= si altele asemenea #=
+- pseudoselectori nth-child
+- media print in css sau se poatr adauga ca link in html cu alt fisier css
+- img srcset="cdcvf.jpg , sdfghjhtr.jpg" 
+- picture 
+    - source src=""
+    - source src=""
+    -etc
+pt a verifica daca se poate folosi ceva anume atunci caniuse.com
+
+*/
