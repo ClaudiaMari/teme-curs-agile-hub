@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout E-shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="grid-container">
+    <header class="header">
+        <div class="header__info">
+            <span >
+                <i class="glyphicon glyphicon-time"></i>
+                Free and Fast Delivery
+            </span>
+            <span>
+                <i  class="glyphicon glyphicon-shopping-cart"></i>
+                Free shipping On all orders
+            </span>
+            <span >
+                <i class="glyphicon glyphicon-envelope"></i>
+                info@example.com
+            </span>
+        </div>
+        <a class="header__logo" href="#">
+            <img src="assets/images/logo3.jpg" alt="logo">
+        </a>
+        <form action="" class="header__search" role="search">
+            <input type="search" name="" id="" placeholder="Search">
+            <select name="Categories" id="category-select">
+                <option value="">All categories</option>
+                <option value="men">Men's wear</option>
+                <option value="women">Women's wear</option>
+                <option value="Electronics">Electronics</option>
+            </select>
+            <button type="submit" class="header__search-button">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </form>
+        <div class="header__social-container">
+            <ul class="header__social">
+                <li><a href="#" class="header__social-use1">Login</a></li>
+                <li><a href="#" class="header__social-fb">Facebook</a></li>
+                <li><a href="#" class="header__social-twi">Twitter</a></li>
+                <li><a href="#" class="header__social-insta">Instagram</a></li>
+                <li><a href="#" class="header__social-you">Youtube</a></li>
+            </ul>
+        </div>
+        <div class="header__nav">
+            <div class="header__nav-collapse">
+                <span> 
+                    <button class="glyphicon glyphicon-menu-hamburger"> </button> 
+                </span>
+                <div class="header__nav-collapse-cart">
+                    <i class="glyphicon glyphicon-shopping-cart"></i>
+                    <span>$0.00 (0 items)</span>
+                    <span>Empty cart</span>
+                </div>
+            </div>
+            <nav class="header__navbar">
+                <ul class="header__navbar-nav">
+                    <li class="header__navbar-nav-item">
+                        <a href="#" class="header__navbar-nav-link">
+                            Home
+                        </a> 
+                    </li>
+                    <li class="header__navbar-nav-item">
+                        <a href="#" class="header__navbar-nav-link">
+                            Men's wear
+                            <i class="glyphicon glyphicon-triangle-bottom"></i>
+                        </a>
+                        <ul class="header__navbar-nav-item-extins">
+                            <div class="header__navbar-nav-item-extins-container">
+                                <div class="header__navbar-nav-item-extins-promo">
+                                    <a href="#" class="header__navbar-nav-link">
+                                        <img src="assets/images/woo1.jpg" alt="offers for men">
+                                    </a>
+                                </div>
+                                <div class="header__navbar-nav-item-extins-list">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Wallets
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Clothing
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Footwear
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Watches
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Accessories
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Bags
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Caps & Hats
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Jewellery
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Sunglasses 
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Perfumes
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Beauty
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Shirts
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Sunglasses
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Swimwear
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="header__navbar-nav-item">
+                        <a href="#" class="header__navbar-nav-link">
+                            Women's wear
+                            <i class="glyphicon glyphicon-triangle-bottom"></i>
+                        </a>
+                        <ul class="header__navbar-nav-item-extins">
+                            <div class="header__navbar-nav-item-extins-container">
+                                <div class="header__navbar-nav-item-extins-promo">
+                                    <a href="#" class="header__navbar-nav-item-extins-link">
+                                        <img src="assets/images/woo.jpg" alt="offers for women">
+                                    </a>
+                                </div>
+                                <div class="header__navbar-nav-item-extins-list">
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Wallets
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Clothing
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Footwear
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Watches
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Accessories
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Bags
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Caps & Hats
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Jewellery
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Sunglasses 
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Perfumes
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Beauty
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Shirts
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Sunglasses
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="header__navbar-nav-item-extins-link">
+                                                Swimwear
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="header__navbar-nav-item">
+                        <a href="#" class="header__navbar-nav-link">
+                        Electronics
+                        </a>
+                    </li>
+                    <li class="header__navbar-nav-item">
+                        <a href="#" class="header__navbar-nav-link">
+                        Short codes
+                        </a>
+                    </li>
+                    <li class="header__navbar-nav-item">
+                        <a href="#" class="header__navbar-nav-link">
+                        Contact
+                        </a>
+                    </li>
+                    <li class="header__navbar-nav-item">
+                        <ul>
+                            <li>
+                                <span>
+                                    <i class="glyphicon glyphicon-shopping-cart"></i>
+                                    $0.00 (0 items)</span>
+                                <li>Empty cart</li>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <img src="assets/images/ba1.jpg" alt="gallery" class="gallery_item">
+            <img src="assets/images/ba2.jpg" alt="gallery" class="gallery_item">
+            <img src="assets/images/ba3.jpg" alt="gallery" class="gallery_item">
+        </section>
+        <section class="text">
+            <h1 class="uppercase"><span>New</span> arrivals</h1>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Dolorum asperiores 
+                blanditiis repellendus.</p>
+        </section>
+        <section class="offers">
+            <article class="offers__promo">
+                <img src="assets/images/wed1.jpg" alt="wedding collection" class="offers__promo-bg">
+                <span class="offers__promo-text"> 
+                    <span class="uppercase">Wedding collection</span>
+                    <span >Flat 50% discount</span>
+                    <span>
+                        <span class="striketrough">$250</span> 
+                        <span >$500</span>
+                    </span>
+                    <button type="submit" class="uppercase">Add to cart</button>
+                </span>
+            </article>
+            <article class="offers__brand">
+                <img src="assets/images/levis1.png" alt="logo levis">
+                <span class="uppercase">
+                    Up to 40% off
+                </span>
+                <button type="submit">Shop now</button>
+            </article>
+            <article class="offers__brand">
+                <span class="uppercase">
+                    Up to 50% off
+                </span>
+                <button type="submit">Shop now</button>
+                <img src="assets/images/dig.jpg" alt="logo digjam" >
+            </article>
+            <article class="offers__promo">
+                <img src="assets/images/wed2.jpg" alt="shop men" class="offers__promo-bg">
+                <span class="offers__promo-text uppercase"> 
+                    <span class="offers__promo-part"> Spring / summer</span>
+                    <span class="offers__promo-part"> Shop men</span>
+                </span>
+            </article>
+            <section class="offers__special">
+                <article class="offers__special-part">
+                    <img src="assets/images/p1.jpg" alt="apple phone">
+                </article>
+                <article class="offers__special-part">
+                    <span>buy 1 get 1 free on</span>
+                    <span>branded</span>
+                    <span>watches</span>
+                </article>
+                <article class="offers__special-part">
+                    <span>special offers and 50%</span>
+                    <span>discounts on</span>
+                    <span>mobiles</span>
+                </article>
+                <article class="offers__special-part">
+                    <img src="assets/images/p2.jpg" alt="apple watch">
+                </article>
+                <article class="offers__special-part">
+                    <img src="assets/images/p4.jpg" alt="">
+                </article>
+            </section>
+        </section>
+        <section class="categories">
+            <a href="#" class="categories__item">Latest designs</a>
+            <a href="#" class="categories__item">special offers</a>
+            <a href="#" class="categories__item">collection</a>
+        </section>
+        <section>
+            <article class="shop__item">
+                <span class="shop__item-type">new</span>
+                <img src="assets/images/a1.png" alt="" class="shop__item-image">
+                <span class="shop__item-name">Air Tshirt Black</span>
+                <span class="shop__item-price">
+                    $45.99 
+                    <span class="shop__item-discount">$69.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+            <article class="shop__item">
+                <span class="shop__item-type">1+1 offer</span>
+                <img src="assets/images/a2.png" alt="" class="shop__item-image">
+                <span class="shop__item-name">Next Blue Blazer</span>
+                <span class="shop__item-price">
+                    $99.99 
+                    <span class="shop__item-discount">$109.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+            <article class="shop__item">
+                <span class="shop__item-type">new</span>
+                <img src="assets/images/a3.png" alt="" class="shop__item-image">
+                <span class="shop__item-name">Air Tshirt Black</span>
+                <span class="shop__item-price">
+                    $119.99 
+                    <span class="shop__item-discount">$120.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+            <article class="shop__item">
+                <span class="shop__item-type">new</span>
+                <img src="assets/images/a4.png" alt="" class="shop__item-image">
+                <span class="shop__item-name">Maroon Puma Tshirt</span>
+                <span class="shop__item-price">
+                    $79.99 
+                    <span class="shop__item-discount">$120.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+            <article class="shop__item">
+                <span class="shop__item-type">combo pack</span>
+                <img src="assets/images/a5.png" alt="" class="shop__item-image">
+                <span class="shop__item-name">Multicoloured TShirts</span>
+                <span class="shop__item-price">
+                    $129.99 
+                    <span class="shop__item-discount">$150.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+            <article class="shop__item">
+                <span class="shop__item-type">new</span>
+                <img src="assets/images/a6.png" alt="" class="shop__item-image">
+                <span class="shop__item-name">Air Tshirt Back</span>
+                <span class="shop__item-price">
+                    $129.99 
+                    <span class="shop__item-discount">$150.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+            <article class="shop__item">
+                <span class="shop__item-type">new</span>
+                <img src="assets/images/a7.png" alt="" class="shop__item-image">
+                <span class="shop__item-name">Dresses</span>
+                <span class="shop__item-price">
+                    $129.99 
+                    <span class="shop__item-discount">$150.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+            <article class="shop__item">
+                <span class="shop__item-type">new</span>
+                <img src="assets/images/a8.png" alt="" class="shop__item-image">
+                <span class="shop__item-name">Wedding blazers</span>
+                <span class="shop__item-price">
+                    $129.99 
+                    <span class="shop__item-discount">$150.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+            <article class="shop__item">
+                <span class="shop__item-type">new</span>
+                <img src="assets/images/g1.png" alt="" class="shop__item-image">
+                <span class="shop__item-name">Dresses</span>
+                <span class="shop__item-price">
+                    $45.99 
+                    <span class="shop__item-discount">$69.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+            <article class="shop__item">
+                <span class="shop__item-type">new</span>
+                <img src="assets/images/g2.png" alt="" class="shop__item-image">
+                <span class="shop__item-name">Shirts</span>
+                <span class="shop__item-price">
+                    $45.99 
+                    <span class="shop__item-discount">$69.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+            <article class="shop__item">
+                <span class="shop__item-type">new</span>
+                <img src="assets/images/g3.png" alt="" class="shop__item-image">
+                <span class="shop__item-name"> Shirts</span>
+                <span class="shop__item-price">
+                    $45.99 
+                    <span class="shop__item-discount">$69.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+            <article class="shop__item">
+                <span class="shop__item-type">new</span>
+                <img src="assets/images/mw2.png" alt="" class="shop__item-image">
+                <span class="shop__item-name">T shirts</span>
+                <span class="shop__item-price">
+                    $45.99 
+                    <span class="shop__item-discount">$69.71</span>
+                </span>
+                <button type="submit" class="shop__item-cart-btn"> Add to cart</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="visual-footer">
+                <span class="uppercase">Buy your product in a simple way</span>
+                <span class="glyphicon glyphicon-user"></span>
+                <span class="uppercase">Login to your account</span>
+                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque quia expedita officia!</span>
+                <span class="glyphicon glyphicon-ok"></span>
+                <span class="uppercase">Select your item</span>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde fugiat expedita maiores!</span>
+                <span class="glyphicon glyphicon-credit-card"></span>
+                <span class="uppercase">Make payment</span>
+                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea fugit illo.</span>
+        </section>  
+        <section class="info-footer">
+            <div class="info-footer__part">
+                <a class="header__logo" href="#">
+                    <img src="assets/images/logo3.jpg" alt="logo">
+                </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis reiciendis, nemo autem aliquam obcaecati ab rerum deserunt quae suscipit beatae voluptatum eveniet repellat alias mollitia numquam aut sapiente adipisci inventore.</p>
+            </div>
+            <div class="info-footer__part">
+                <span class="uppercase">Sing up for newsletter !</span>
+                <form> 
+                    <input type="email" placeholder="Email">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="info-footer__part">
+                <p>Information</p>
+                <ul class="info-footer__list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Men's wear</a></li>
+                    <li><a href="#">Women's wear</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Short Codes</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="info-footer__part">
+                <P>Store Information</P>
+                <span >
+                    <i class="glyphicon glyphicon-map-marker"></i>
+                    Adress: 1234k Avenue, 4th block, Newyork City.
+                </span>
+                <span >
+                    <i class="glyphicon glyphicon-envelope"></i>
+                    Email: info@example.com
+                </span>
+                <span >
+                    <i class="glyphicon glyphicon-earphone"></i>
+                    Phone: 1234 567 567
+                </span>
+            </div>
+            <div class="info-footer__part">
+                <p>Flikr posts </p>
+                <img src="assets/images/b15.jpg" alt="" class="footer-info__part-flickr">
+                <img src="assets/images/b16.jpg" alt="" class="footer-info__part-flickr">
+                <img src="assets/images/b17.jpg" alt="" class="footer-info__part-flickr">
+                <img src="assets/images/b18.jpg" alt="" class="footer-info__part-flickr">
+                <img src="assets/images/b15.jpg" alt="" class="footer-info__part-flickr">
+                <img src="assets/images/b16.jpg" alt="" class="footer-info__part-flickr">
+                <img src="assets/images/b17.jpg" alt="" class="footer-info__part-flickr">
+                <img src="assets/images/b18.jpg" alt="" class="footer-info__part-flickr">
+                <img src="assets/images/b15.jpg" alt="" class="footer-info__part-flickr">
+            </div>
+            <div class="info-footer__part">
+                &copy; 2016 Smart Shop. All rights reserved | Design by W3layouts
+            </div>
+        </section>
+    </footer>
+
+</body>
+</html>
