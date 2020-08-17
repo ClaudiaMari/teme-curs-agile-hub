@@ -22,36 +22,38 @@
                 info@example.com
             </span>
         </div>
-        <a class="header__logo" href="#">
-            <img src="assets/images/logo3.jpg" alt="logo">
-        </a>
-        <form action="" class="header__search" role="search">
-            <input type="search" name="" id="" placeholder="Search">
-            <select name="Categories" id="category-select">
-                <option value="">All categories</option>
-                <option value="men">Men's wear</option>
-                <option value="women">Women's wear</option>
-                <option value="Electronics">Electronics</option>
-            </select>
-            <button type="submit" class="header__search-button">
-                <span class="glyphicon glyphicon-search"></span>
-            </button>
-        </form>
-        <div class="header__social-container">
-            <ul class="header__social">
-                <li><a href="#" class="header__social-use1">Login</a></li>
-                <li><a href="#" class="header__social-fb">Facebook</a></li>
-                <li><a href="#" class="header__social-twi">Twitter</a></li>
-                <li><a href="#" class="header__social-insta">Instagram</a></li>
-                <li><a href="#" class="header__social-you">Youtube</a></li>
-            </ul>
+        <div class="header__action">
+            <a class="header__logo" href="#">
+                <img src="assets/images/logo3.jpg" alt="logo">
+            </a>
+            <form action="" class="header__search" role="search">
+                <input type="search" name="" id="" placeholder="Search">
+                <select name="Categories" id="category-select">
+                    <option value="">All categories</option>
+                    <option value="men">Men's wear</option>
+                    <option value="women">Women's wear</option>
+                    <option value="Electronics">Electronics</option>
+                </select>
+                <button type="submit" class="header__search-button">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
+            </form>
+            <div class="header__social-container">
+                <ul class="header__social">
+                    <li><a href="#" class="header__social-use1">Login</a></li>
+                    <li><a href="#" class="header__social-fb">Facebook</a></li>
+                    <li><a href="#" class="header__social-twi">Twitter</a></li>
+                    <li><a href="#" class="header__social-insta">Instagram</a></li>
+                    <li><a href="#" class="header__social-you">Youtube</a></li>
+                </ul>
+            </div>
         </div>
         <div class="header__nav">
             <div class="header__nav-collapse">
                 <span> 
                     <button class="glyphicon glyphicon-menu-hamburger"> </button> 
                 </span>
-                <div class="header__nav-collapse-cart">
+                <div class="header__cart">
                     <i class="glyphicon glyphicon-shopping-cart"></i>
                     <span>$0.00 (0 items)</span>
                     <span>Empty cart</span>
@@ -64,109 +66,103 @@
                             Home
                         </a> 
                     </li>
-                    <li class="header__navbar-nav-item">
+                    <li class="header__navbar-nav-item dropdown">
                         <a href="#" class="header__navbar-nav-link">
                             Men's wear
                             <i class="glyphicon glyphicon-triangle-bottom"></i>
                         </a>
-                        <ul class="header__navbar-nav-item-extins">
-                            <div class="header__navbar-nav-item-extins-container">
-                                <div class="header__navbar-nav-item-extins-promo">
-                                    <a href="#" class="header__navbar-nav-link">
-                                        <img src="assets/images/woo1.jpg" alt="offers for men">
-                                    </a>
-                                </div>
-                                <div class="header__navbar-nav-item-extins-list">
-                                    <ul>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Wallets
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Clothing
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Footwear
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Watches
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Accessories
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Bags
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Caps & Hats
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Jewellery
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Sunglasses 
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Perfumes
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Beauty
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Shirts
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Sunglasses
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="header__navbar-nav-item-extins-link">
-                                                Swimwear
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <ul class="header__navbar-nav-item-extins dropdown__content">
+                            <div class="header__navbar-nav-item-extins-promo">
+                                <a href="#" class="header__navbar-nav-link">
+                                    <img src="assets/images/woo1.jpg" alt="offers for men">
+                                </a>
                             </div>
+                                <ul class="header__navbar-nav-item-extins-list">
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Wallets
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Clothing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Footwear
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Watches
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Accessories
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Bags
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Caps & Hats
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Jewellery
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Sunglasses 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Perfumes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Beauty
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Shirts
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Sunglasses
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="header__navbar-nav-item-extins-link">
+                                            Swimwear
+                                        </a>
+                                    </li>
+                                </ul>
                         </ul>
                     </li>
-                    <li class="header__navbar-nav-item">
+                    <li class="header__navbar-nav-item dropdown">
                         <a href="#" class="header__navbar-nav-link">
                             Women's wear
                             <i class="glyphicon glyphicon-triangle-bottom"></i>
                         </a>
-                        <ul class="header__navbar-nav-item-extins">
-                            <div class="header__navbar-nav-item-extins-container">
+                        <ul class="header__navbar-nav-item-extins dropdown__content">
                                 <div class="header__navbar-nav-item-extins-promo">
-                                    <a href="#" class="header__navbar-nav-item-extins-link">
+                                    <a href="#" class="header__navbar-nav-link">
                                         <img src="assets/images/woo.jpg" alt="offers for women">
                                     </a>
                                 </div>
-                                <div class="header__navbar-nav-item-extins-list">
-                                    <ul>
+                                    <ul class="header__navbar-nav-item-extins-list">
                                         <li>
                                             <a href="#" class="header__navbar-nav-item-extins-link">
                                                 Wallets
@@ -238,8 +234,6 @@
                                             </a>
                                         </li>
                                     </ul>
-                                </div>
-                            </div>
                         </ul>
                     </li>
                     <li class="header__navbar-nav-item">
@@ -257,15 +251,12 @@
                         Contact
                         </a>
                     </li>
-                    <li class="header__navbar-nav-item">
-                        <ul>
-                            <li>
-                                <span>
-                                    <i class="glyphicon glyphicon-shopping-cart"></i>
-                                    $0.00 (0 items)</span>
-                                <li>Empty cart</li>
-                            </li>
-                        </ul>
+                    <li class="header__navbar-nav-item" id="cart">
+                        <div class="header__cart" >
+                            <i class="glyphicon glyphicon-shopping-cart"></i>
+                            <span>$0.00 (0 items)</span>
+                            <span>Empty cart</span>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -285,7 +276,7 @@
                 blanditiis repellendus.</p>
         </section>
         <section class="offers">
-            <article class="offers__promo">
+            <article class="offers__promo w">
                 <img src="assets/images/wed1.jpg" alt="wedding collection" class="offers__promo-bg">
                 <span class="offers__promo-text"> 
                     <span class="uppercase">Wedding collection</span>
@@ -297,58 +288,71 @@
                     <button type="submit" class="uppercase">Add to cart</button>
                 </span>
             </article>
-            <article class="offers__brand">
+            <article class="offers__brand l">
                 <img src="assets/images/levis1.png" alt="logo levis">
                 <span class="uppercase">
                     Up to 40% off
                 </span>
                 <button type="submit">Shop now</button>
             </article>
-            <article class="offers__brand">
+            <article class="offers__brand d">
                 <span class="uppercase">
                     Up to 50% off
                 </span>
                 <button type="submit">Shop now</button>
                 <img src="assets/images/dig.jpg" alt="logo digjam" >
             </article>
-            <article class="offers__promo">
+            <article class="offers__promo m">
                 <img src="assets/images/wed2.jpg" alt="shop men" class="offers__promo-bg">
                 <span class="offers__promo-text uppercase"> 
                     <span class="offers__promo-part"> Spring / summer</span>
                     <span class="offers__promo-part"> Shop men</span>
                 </span>
             </article>
-            <section class="offers__special">
-                <article class="offers__special-part">
-                    <img src="assets/images/p1.jpg" alt="apple phone">
-                </article>
-                <article class="offers__special-part">
-                    <span>buy 1 get 1 free on</span>
-                    <span>branded</span>
-                    <span>watches</span>
-                </article>
-                <article class="offers__special-part">
-                    <span>special offers and 50%</span>
-                    <span>discounts on</span>
-                    <span>mobiles</span>
-                </article>
-                <article class="offers__special-part">
-                    <img src="assets/images/p2.jpg" alt="apple watch">
-                </article>
-                <article class="offers__special-part">
-                    <img src="assets/images/p4.jpg" alt="">
-                </article>
-            </section>
         </section>
+        <section class="offers__special">
+            <article class="offers__special-part p">
+                <img src="assets/images/p1.jpg" alt="apple phone">
+            </article>
+            <article class="offers__special-part b">
+                <span>buy 1 get 1 free on</span>
+                <span>branded</span>
+                <span>watches</span>
+            </article>
+            <article class="offers__special-part o">
+                <span>special offers and 50%</span>
+                <span>discounts on</span>
+                <span>mobiles</span>
+            </article>
+            <article class="offers__special-part c">
+                <img src="assets/images/p2.jpg" alt="apple watch">
+            </article>
+            <article class="offers__special-part s">
+                <img src="assets/images/p4.jpg" alt="">
+            </article>
+        </section>
+
         <section class="categories">
             <a href="#" class="categories__item">Latest designs</a>
             <a href="#" class="categories__item">special offers</a>
             <a href="#" class="categories__item">collection</a>
         </section>
-        <section>
+        <section class="shop">
             <article class="shop__item">
                 <span class="shop__item-type">new</span>
-                <img src="assets/images/a1.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/a1.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/a1.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name">Air Tshirt Black</span>
                 <span class="shop__item-price">
                     $45.99 
@@ -358,7 +362,19 @@
             </article>
             <article class="shop__item">
                 <span class="shop__item-type">1+1 offer</span>
-                <img src="assets/images/a2.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/a2.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/a2.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name">Next Blue Blazer</span>
                 <span class="shop__item-price">
                     $99.99 
@@ -368,7 +384,19 @@
             </article>
             <article class="shop__item">
                 <span class="shop__item-type">new</span>
-                <img src="assets/images/a3.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/a3.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/a3.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name">Air Tshirt Black</span>
                 <span class="shop__item-price">
                     $119.99 
@@ -378,7 +406,19 @@
             </article>
             <article class="shop__item">
                 <span class="shop__item-type">new</span>
-                <img src="assets/images/a4.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/a4.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/a4.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name">Maroon Puma Tshirt</span>
                 <span class="shop__item-price">
                     $79.99 
@@ -388,7 +428,19 @@
             </article>
             <article class="shop__item">
                 <span class="shop__item-type">combo pack</span>
-                <img src="assets/images/a5.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/a5.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/a5.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name">Multicoloured TShirts</span>
                 <span class="shop__item-price">
                     $129.99 
@@ -398,7 +450,19 @@
             </article>
             <article class="shop__item">
                 <span class="shop__item-type">new</span>
-                <img src="assets/images/a6.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/a6.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/a6.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name">Air Tshirt Back</span>
                 <span class="shop__item-price">
                     $129.99 
@@ -408,7 +472,19 @@
             </article>
             <article class="shop__item">
                 <span class="shop__item-type">new</span>
-                <img src="assets/images/a7.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/a7.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/a7.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name">Dresses</span>
                 <span class="shop__item-price">
                     $129.99 
@@ -418,7 +494,19 @@
             </article>
             <article class="shop__item">
                 <span class="shop__item-type">new</span>
-                <img src="assets/images/a8.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/a8.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/a8.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name">Wedding blazers</span>
                 <span class="shop__item-price">
                     $129.99 
@@ -428,7 +516,19 @@
             </article>
             <article class="shop__item">
                 <span class="shop__item-type">new</span>
-                <img src="assets/images/g1.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/g1.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/g1.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name">Dresses</span>
                 <span class="shop__item-price">
                     $45.99 
@@ -438,7 +538,19 @@
             </article>
             <article class="shop__item">
                 <span class="shop__item-type">new</span>
-                <img src="assets/images/g2.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/g2.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/g2.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name">Shirts</span>
                 <span class="shop__item-price">
                     $45.99 
@@ -448,7 +560,19 @@
             </article>
             <article class="shop__item">
                 <span class="shop__item-type">new</span>
-                <img src="assets/images/g3.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/g3.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/g3.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name"> Shirts</span>
                 <span class="shop__item-price">
                     $45.99 
@@ -458,7 +582,19 @@
             </article>
             <article class="shop__item">
                 <span class="shop__item-type">new</span>
-                <img src="assets/images/mw2.png" alt="" class="shop__item-image">
+                <div class="flip-img">
+                    <div class="flip-img__inner">
+                        <div class="flip-img__front">
+                            <img src="assets/images/mw2.png" alt="" class="shop__item-image">
+                        </div>
+                        <div class="flip-img__back">
+                            <div class="uppercase qik">
+                                Quick view
+                            </div>
+                            <img src="assets/images/mw2.png" alt="" class="shop__item-image">
+                        </div>
+                    </div>
+                </div>
                 <span class="shop__item-name">T shirts</span>
                 <span class="shop__item-price">
                     $45.99 
